@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unit Converter"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        android:paddingBottom="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonWeight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        app:srcCompat="@drawable/weigth"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonDistance"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginRight="100dp" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonWeight"
+        app:layout_constraintStart_toStartOf="@id/imageButtonWeight"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonWeight"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonDistance"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        app:srcCompat="@drawable/distance"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@id/imageButtonWeight"
+        app:layout_constraintStart_toEndOf="@id/imageButtonWeight"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonDistance"
+        app:layout_constraintStart_toStartOf="@id/imageButtonDistance"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonDistance"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonTime"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonTemperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewWeight"
+        app:srcCompat="@drawable/time" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonTime"
+        app:layout_constraintStart_toStartOf="@id/imageButtonTime"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonTime"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonTemperature"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        app:srcCompat="@drawable/temp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@id/imageButtonTime"
+        app:layout_constraintStart_toEndOf="@id/imageButtonTime"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonTemperature"
+        app:layout_constraintStart_toStartOf="@id/imageButtonTemperature"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonTemperature"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonLength"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/imageButtonTime"
+        app:layout_constraintStart_toStartOf="@id/imageButtonTime"
+        app:layout_constraintTop_toBottomOf="@id/textViewTime"
+        app:srcCompat="@drawable/length" />
+
+    <TextView
+        android:id="@+id/textViewLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonLength"
+        app:layout_constraintStart_toStartOf="@id/imageButtonLength"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonLength"/>
+    <ImageButton
+        android:id="@+id/imageButtonVolume"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        app:srcCompat="@drawable/volume"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@id/imageButtonLength"
+        app:layout_constraintStart_toEndOf="@id/imageButtonLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/textViewVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonVolume"
+        app:layout_constraintStart_toStartOf="@id/imageButtonVolume"
+        app:layout_constraintEnd_toEndOf="@id/imageButtonVolume"/>
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_radius"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:text="Exit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/imageButtonLength"
+        app:layout_constraintTop_toBottomOf="@id/textViewLength" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
